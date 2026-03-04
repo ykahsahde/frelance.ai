@@ -15,7 +15,7 @@ function Register() {
     const handleSubmit =async(e)=>{
         e.preventDefault();
         try {
-             const res = await axios.post("http://localhost:5001/api/auth/register",from);
+             const res = await axios.post("https://frelance-ai.onrender.com/api/auth/register",from);
              alert(res.data.message)
         } catch (error) {
              alert(error.response.data.message);
