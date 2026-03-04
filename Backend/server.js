@@ -22,7 +22,8 @@ mongoose.connect(process.env.MONGO_URI)
 })
 app.use(express.json());
 app.use(cors({
-  origin: "https://frelance-ai.vercel.app"
+  origin: "https://frelance-ai.vercel.app",
+  credentials: true
 }));
 // Routes
 app.use("/api/auth",authRoutes);
