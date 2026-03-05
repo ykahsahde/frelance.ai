@@ -5,9 +5,9 @@ import axios from "axios"
 function Register() {
 
     const [from,setForm] = useState({
-        name:"",
-        email:"",
-        password:""
+        name:"yash",
+        email:"@gmail.com",
+        password:"baba"
     });
      const handleChange =(e)=>{
         setForm({ ...from,[e.target.name]:e.target.value});
