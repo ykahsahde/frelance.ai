@@ -21,7 +21,7 @@ const handleGoogleLogin = async () => {
 
     // Send Google user data to backend
     const res = await axios.post(
-      "http://localhost:5001/api/auth/google-login",
+      "https://frelance-ai.onrender.com/api/auth/google-login",
       {
         name: user.displayName,
         email: user.email,
@@ -49,7 +49,7 @@ const handleGoogleLogin = async () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5001/api/auth/login",
+        "https://frelance-ai.onrender.com/api/auth/login",
         form
       );
 
