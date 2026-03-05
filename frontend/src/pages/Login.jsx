@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../firebase.js";
+import Register from "./Register"
+
 
 function Login() {
 
@@ -21,7 +23,7 @@ const handleGoogleLogin = async () => {
 
     // Send Google user data to backend
     const res = await axios.post(
-      "https://frelance-ai.onrender.com/api/auth/google-login",
+      "https://frelance-ai.onrender.com/api/auths/google-login",
       {
         name: user.displayName,
         email: user.email,
@@ -100,6 +102,8 @@ const handleGoogleLogin = async () => {
             <span className="text-blue-600 cursor-pointer">
               Forgot Password?
             </span>
+           
+
           </div>
 
           <button
