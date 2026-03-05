@@ -21,7 +21,7 @@ const handleGoogleLogin = async () => {
 
     // Send Google user data to backend
     const res = await axios.post(
-      "https://frelance-ai.onrender.com/api/auth/google-login",
+      "http://localhost:5001/api/auth/google-login",
       {
         name: user.displayName,
         email: user.email,
